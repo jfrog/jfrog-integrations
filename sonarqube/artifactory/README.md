@@ -145,4 +145,4 @@ information.
 
 1. JFrog Artifactory:  http://www.jfrog.com
 2. SonarQube : http://www.sonarsource.com
-3. Github: https://github.com/jfrog/jfrog-integrations/tree/master/sonarqube/artifactory
+3. JFrog Integration : https://github.com/jfrog/jfrog-integrations/tree/master/sonarqube/artifactory
