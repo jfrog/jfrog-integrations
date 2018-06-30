@@ -10,7 +10,7 @@ Now this integration allows the above information to be viewed in the context of
 
 This integration is also CI agnostic and can be used in many of the popular CI environments like Jenkins, Travis and CircleCI.
 
-The main integration component of interest is the supplied [artifactory-sonar.sh](https://github.com/jfrog/jfrog-integration/blob/master/sonarqube/artifactory/artifactory-sonar.sh). Full details are listed below.
+The main integration component of interest is the supplied [artifactory-sonar.sh](https://github.com/jfrog/jfrog-integrations/blob/master/sonarqube/artifactory/artifactory-sonar.sh). Full details are listed below.
 
 ![Artifactory-SonarQube Integration](images/jfrogsonarintro.png)
 
@@ -145,4 +145,4 @@ information.
 
 1. JFrog Artifactory:  http://www.jfrog.com
 2. SonarQube : http://www.sonarsource.com
-3. Github: https://github.com/jfrog-integrations/artifactory
+3. Github: https://github.com/jfrog-integrations//sonarqube
