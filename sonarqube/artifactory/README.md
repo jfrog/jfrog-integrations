@@ -2,7 +2,7 @@
 
 In your development environment, you might already be using SonarQube to scan your code to detect
 security vulnerabilities, code smells, coverage and bugs, most likely via  [Quality Gate Metrics][8a22582c].
-Now this integration allows the above information to be viewed in the context of a build( Artifactory build_info)
+This integration allows the above information to be viewed in the context of a build (Artifactory build_info) that allows the metadata from SonarQube such as Quality Gate failures to be leveraged further down the pipeline. This empowers release and build managers to leverage SonarQube data to promote builds to productions.
 
   [8a22582c]: https://docs.sonarqube.org/display/SONAR/Quality+Gates "SonarQualityGates"
 
