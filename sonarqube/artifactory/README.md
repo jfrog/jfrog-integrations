@@ -98,7 +98,7 @@ When the Intgeration script artifactory-sonar.sh is invoked, it does the followi
 5. The script will install jfrog cli and connects to artifactory, collects all the environment variables and publishes to artifactory. The build info environment details can be viewed in the artifactory.
 
 
-![Artifactory Build Info](https://github.com/jfrog/jfrog-integrations/blob/master/sonarqube/artifactory/images/artifactory_buildinfo.png)
+![Artifactory Build Info](https://github.com/jfrog/jfrog-integrations/blob/master/sonarqube/artifactory/images/sonarqgerror.png)
 
 6. If quality gate status has failed, the script will exit with status 1, so the build can be failed.
 
