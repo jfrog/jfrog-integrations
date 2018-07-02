@@ -6,13 +6,11 @@ Now this integration allows the above information to be viewed in the context of
 
   [8a22582c]: https://docs.sonarqube.org/display/SONAR/Quality+Gates "SonarQualityGates"
 
+![Artifactory-SonarQube Integration](images/nowait.png)
 
 
-This integration is also CI agnostic and can be used in many of the popular CI environments like Jenkins, Travis and CircleCI.
+This integration is also CI agnostic and can be used in many of the popular CI environments like Jenkins, Travis and CircleCI. The main integration component of interest is the supplied [artifactory-sonar.sh](https://github.com/jfrog/jfrog-integrations/blob/master/sonarqube/artifactory/artifactory-sonar.sh). Full details are listed below.
 
-The main integration component of interest is the supplied [artifactory-sonar.sh](https://github.com/jfrog/jfrog-integrations/blob/master/sonarqube/artifactory/artifactory-sonar.sh). Full details are listed below.
-
-![Artifactory-SonarQube Integration](images/jfrogsonarintro.png)
 
 
 ## Prerequisites for this integration ##
@@ -27,8 +25,9 @@ The main integration component of interest is the supplied [artifactory-sonar.sh
 
 ## How to use the artifactory-sonar integration ##
 
-It is recommended to use the artifactory-sonar integration  script as a reference as pipelines and conventions vary from company to company. Artifactory-Sonar integration can be used in **WAIT**  (blocking) mode or **NOWAIT** (non-blocking) mode. Wait
-mode is the default mode.
+It is recommended to use the artifactory-sonar integration  script as a reference as pipelines and conventions vary from company to company. Artifactory-Sonar integration can be used in **WAIT**  (blocking) mode or **NOWAIT** (non-blocking) mode. Wait mode is the default mode.
+
+![Artifactory-SonarQube Integration](images/jfrogsonarintro.png)
 
 #### WAIT MODE ####
 
