@@ -2,9 +2,10 @@
 
 In your development environment, you might already be using SonarQube to scan your code to detect
 security vulnerabilities, code smells, coverage and bugs, most likely via  [Quality Gate Metrics][8a22582c].
-This integration allows the above information to be viewed in the context of a build (Artifactory build_info) that allows the metadata from SonarQube such as Quality Gate failures to be leveraged further down the pipeline. This empowers release and build managers to leverage SonarQube data to promote builds to production.
+This integration allows the above information to be viewed in the context of a build (Artifactory build_info) that allows the metadata from SonarQube such as Quality Gate failures to be leveraged further down the pipeline. This empowers release and build managers to leverage SonarQube data to [promote][97561555] builds to production.
 
   [8a22582c]: https://docs.sonarqube.org/display/SONAR/Quality+Gates "SonarQualityGates"
+  [97561555]: https://www.jfrog.com/confluence/display/RTF/Artifactory+REST+API#ArtifactoryRESTAPI-BuildPromotion "promote"
 
 ![Artifactory-SonarQube Integration](images/nowait.png)
 
@@ -65,7 +66,9 @@ To invoke in no wait mode, execute
 The information that is captured in the build_info includes CeTaskId and the taskStatus which will be PENDING. The CeTaskId can be used to get the analysis id and quality gate information as implemented in the function waitForAnalysisToComplete() in the
 artifactory-sonar.sh script.
 
-This information can be used in deciding whether to promote this build or not in the pipeline.
+This information can be used in deciding whether to [promote][4336e17a] this build or not in the pipeline.
+
+  [4336e17a]: https://www.jfrog.com/confluence/display/RTF/Artifactory+REST+API#ArtifactoryRESTAPI-BuildPromotion "promote"
 
 
 
