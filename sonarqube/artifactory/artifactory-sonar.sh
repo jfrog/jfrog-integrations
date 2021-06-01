@@ -154,7 +154,7 @@ setReportFile()
 	elif [ -f target/sonar/report-task.txt ]; then
 		rptfile="target/sonar/report-task.txt"
 	else 
-		rptfile=`find . -name report-task.txt -print 2>/dev/null`
+		rptfile=`find . -name report-task.txt -type f -print | head -n 1 2>/dev/null`
 	fi
 }
 
@@ -202,7 +202,7 @@ echo "Current CI Server is $citype CI_BUILD_NUM = $CI_BUILD_NUM, CI_BUILD_NAME=$
 
 srv=`grep serverUrl ${rptfile} | awk -F= '{print $2}'`
 ceTaskId=`grep ceTaskId ${rptfile} | awk -F= '{print $2}'`
-echo "Sonar Tasl Id = ${ceTaskId}"
+echo "Sonar Task Id = ${ceTaskId}"
 
 #Set sonar related information in variables prefixed with SONAR_ and export them
 export SONAR_CETASKID=${ceTaskId}
